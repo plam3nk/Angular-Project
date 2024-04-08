@@ -169,11 +169,11 @@ a {
   margin: 5em 0;
 }
 
-.bordered-btn {
+.colored-btn {
   font-size: 25px;
   border: 2px solid rgb(226, 58, 58);
-  background-color: #fff;
-  color: rgb(226, 58, 58);
+  background-color: rgb(226, 58, 58);
+  color: #fff;
   padding: 0.5em 1.2em;
   border-top-left-radius: 5px;
   border-top-right-radius: 20px;
@@ -182,7 +182,7 @@ a {
   transition: 0.3s ease-in-out;
 }
 
-.bordered-btn:hover {
+.colored-btn:hover {
   background-color: rgb(158, 39, 39);
   border: 2px solid rgb(158, 39, 39);
   color: white;
