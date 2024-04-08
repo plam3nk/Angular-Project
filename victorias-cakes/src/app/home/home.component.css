@@ -28,7 +28,7 @@
   font-weight: 400;
 }
 
-.content p a {
+a {
   text-decoration: none;
 }
 
@@ -116,4 +116,76 @@
   padding-top: 20px;
   text-align: center;
   text-indent: 5px;
+}
+
+.cakes-background {
+  background-image: url("./../../assets/background-beige.png");
+  height: 850px;
+  width: 100%;
+  background-repeat: repeat;
+  background-size: contain;
+}
+
+.cakes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cakes h1 {
+  font-size: 50px;
+  color: grey;
+  padding: 1em 0;
+}
+
+.items-container {
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  background-color: #fff;
+  display: flex;
+  border: 1px solid grey;
+  border-radius: 8px;
+  box-shadow: rgb(218, 218, 218) 0 0 10px;
+  padding: 2em;
+  margin: 0 3em;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item h2 {
+  padding-top: 1em;
+  font-weight: lighter;
+  padding-bottom: 20px;
+}
+
+.item img {
+  width: 420px;
+  height: 350px;
+}
+
+.cakes p {
+  margin: 5em 0;
+}
+
+.bordered-btn {
+  font-size: 25px;
+  border: 2px solid rgb(226, 58, 58);
+  background-color: #fff;
+  color: rgb(226, 58, 58);
+  padding: 0.5em 1.2em;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: 0.3s ease-in-out;
+}
+
+.bordered-btn:hover {
+  background-color: rgb(158, 39, 39);
+  border: 2px solid rgb(158, 39, 39);
+  color: white;
+  transition: 0.3s ease-in-out;
 }
