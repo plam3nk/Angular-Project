@@ -1,0 +1,119 @@
+.hero {
+  background-image: url("./../../assets/background-cake.png");
+  height: 998px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  padding-left: 300px;
+}
+
+.content h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 100px;
+  font-weight: bold;
+  color: rgb(87, 87, 87);
+}
+
+.content p {
+  padding-top: 30px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.content p a {
+  text-decoration: none;
+}
+
+.colored-btn {
+  background-color: rgb(226, 58, 58);
+  padding: 0.5em 1.2em;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.colored-btn:hover {
+  background-color: rgb(158, 39, 39);
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.author-background {
+  background-image: url("./../../assets/background-cupcakes.png");
+  height: 625px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.author {
+  background-color: white;
+  margin: 100px 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(216, 214, 214);
+  box-shadow: rgb(218, 218, 218) 0 0 10px;
+  border-radius: 8px;
+  padding: 5em 10em;
+}
+
+.author img {
+  border-radius: 10em;
+  width: 20%;
+  height: 20%;
+}
+
+.socials {
+  display: flex;
+  gap: 20px;
+}
+
+.socials svg {
+  padding: 10px;
+  border-radius: 5px;
+  width: 18px;
+  height: 18px;
+  color: white;
+  background-color: rgb(226, 58, 58);
+  transition: 0.2s ease-in-out;
+}
+
+.socials svg:hover {
+  padding: 6px;
+  width: 22px;
+  height: 22px;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.author h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 60px;
+  font-weight: bold;
+  color: rgb(87, 87, 87);
+}
+
+.author h2 {
+  font-weight: lighter;
+  padding-bottom: 20px;
+}
+
+.author p {
+  font-size: 20px;
+  padding-top: 20px;
+  text-align: center;
+  text-indent: 5px;
+}

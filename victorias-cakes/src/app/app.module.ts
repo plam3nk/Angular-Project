@@ -3,12 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './core/header/header.component';
-import { FooterComponent } from './core/footer/footer.component';
+import { HomeComponent } from './home/home.component';
+import { ErrorComponent } from './error/error.component';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent],
-  imports: [BrowserModule, AppRoutingModule],
+  declarations: [AppComponent, HomeComponent, ErrorComponent],
+  imports: [BrowserModule, CoreModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })

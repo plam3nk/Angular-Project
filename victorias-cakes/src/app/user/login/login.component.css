@@ -1,0 +1,94 @@
+.container {
+  font-size: 24px;
+  margin: 3em;
+}
+
+.login h1 {
+  color: rgb(102, 102, 102);
+}
+fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0px;
+}
+
+.login p {
+  padding: 0.3em;
+}
+
+.login input {
+  font-size: 22px;
+  border: 1px solid grey;
+  padding: 0.3em 1em;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.login label {
+  padding-right: 0.5em;
+}
+
+.field-password {
+  margin-bottom: 1em;
+}
+
+button {
+  cursor: pointer;
+  font-family: "Itim", cursive;
+  font-size: 22px;
+  border: none;
+  margin-bottom: 3em;
+}
+
+a {
+  margin-left: 0.3em;
+  text-decoration: none;
+  color: rgb(36, 36, 36);
+  font-size: 22px;
+  transition: 0.15s ease-in-out;
+}
+
+a:hover {
+  margin-left: 0.6em;
+  color: rgb(139, 139, 139);
+  transition: 0.15s ease-in-out;
+}
+
+.colored-btn {
+  background-color: rgb(226, 58, 58);
+  padding: 0.5em 1.2em;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.colored-btn:hover {
+  background-color: rgb(158, 39, 39);
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.bordered-btn {
+  border: 2px solid rgb(226, 58, 58);
+  background-color: #fff;
+  color: rgb(226, 58, 58);
+  padding: 0.5em 1.2em;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: 0.3s ease-in-out;
+}
+
+.bordered-btn:hover {
+  background-color: rgb(158, 39, 39);
+  border: 2px solid rgb(158, 39, 39);
+  color: white;
+  transition: 0.3s ease-in-out;
+}
