@@ -1,16 +1,16 @@
 <div class="container">
-    <form class="login">
+    <form class="login" #form="ngForm" (ngSubmit)="login(form)">
         <fieldset>
             <h1>Login</h1>
 
             <p class="field">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" ngModel #inputEmail="ngModel" required [appEmail]="['bg', 'com']">
             </p>
 
             <p class="field field-password">
                 <label for="password">Password</label>
-                <input type="password" name="password" id="password">
+                <input type="password" name="password" id="password" ngModel #inputPassword="ngModel" required minlength="5">
             </p>
 
             <button class="colored-btn">Login</button>

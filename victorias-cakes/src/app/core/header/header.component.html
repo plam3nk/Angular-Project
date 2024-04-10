@@ -9,7 +9,9 @@
         <p><a href="">Cakes</a></p>
         <p><a href="">Contacts</a></p>
         <p><a href="">Reviews</a></p>
-        <p><a class="colored-btn" routerLink="/auth/login">Login</a></p>
+        <p *ngIf="!isLogged"><a class="colored-btn" routerLink="/auth/login">Login</a></p>
+        <p *ngIf="isLogged"><a class="colored-btn" routerLink="/auth/profile">{{username}}'s Profile</a></p>
+        <p *ngIf="isLogged"><a class="colored-btn" (click)="logout()">Logout</a></p>
     </div>
 
 </header>

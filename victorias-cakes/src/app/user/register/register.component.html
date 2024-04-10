@@ -1,28 +1,29 @@
 <div class="container">
-    <form class="register">
+    <form class="register" [formGroup]="form" (ngSubmit)="register()">
         <fieldset>
             <h1>Create your account!</h1>
 
             <p class="field">
                 <label for="username">Username</label>
-                <input type="username" name="username" id="username">
+                <input type="username" name="username" id="username" formControlName="username">
             </p>
 
             <p class="field">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email">
-            </p>
-            
-
-            <p class="field">
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password">
+                <input type="email" name="email" id="email" formControlName="email">
             </p>
 
-            <p class="field field-rePassword">
-                <label for="rePassword">Repeat Password</label>
-                <input type="password" name="rePassword" id="rePassword">
-            </p>
+            <ng-container formGroupName="passGroup">
+                <p class="field">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" formControlName="password">
+                </p>
+
+                <p class="field field-rePassword">
+                    <label for="rePassword">Repeat Password</label>
+                    <input type="password" name="rePassword" id="rePassword" formControlName="rePassword">
+                </p>
+            </ng-container>
 
             <button class="colored-btn">Register</button>
 

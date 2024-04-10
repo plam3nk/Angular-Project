@@ -78,6 +78,7 @@
 }
 
 .text p {
+    text-indent: 50px;
   font-size: 25px;
   padding: 40px;
   color: rgb(87, 87, 87);
