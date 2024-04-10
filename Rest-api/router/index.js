@@ -4,7 +4,8 @@ const themes = require('./themes');
 const posts = require('./posts');
 const likes = require('./likes');
 const test = require('./test');
-const cakes = require('./cakes')
+const cakes = require('./cakes');
+const reviews = require('./reviews');
 const { authController } = require('../controllers');
 
 router.post('/register', authController.register);
@@ -13,7 +14,8 @@ router.post('/logout', authController.logout);
 
 router.use('/users', users);
 router.use('/themes', themes);
-router.use('/cakes', cakes)
+router.use('/cakes', cakes);
+router.use('/reviews', reviews)
 router.use('/posts', posts);
 router.use('/likes', likes);
 router.use('/test', test);

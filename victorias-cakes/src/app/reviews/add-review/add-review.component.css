@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 25px;
+}
+
+.container h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 75px;
+  font-weight: 600;
+  color: rgb(87, 87, 87);
+}
+.field-set {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.comment,
+.rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-size: 40 px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.comment input {
+  margin: 0.5em;
+  padding: 1em 0;
+  text-wrap: wrap;
+  font-size: 30px;
+}
+
+.rating input {
+  font-size: 30px;
+  text-align: center;
+}
+
+.colored-btn {
+  margin-bottom: 3.6em;
+  font-size: 24px;
+  background-color: rgb(226, 58, 58);
+  padding: 0.5em 1.2em;
+  border: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.colored-btn:hover {
+  background-color: rgb(158, 39, 39);
+  color: white;
+  transition: 0.3s ease-in-out;
+}

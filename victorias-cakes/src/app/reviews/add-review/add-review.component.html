@@ -1,0 +1,18 @@
+<div class="container">
+    <h1>Create a review!</h1>
+    <form class="review" [formGroup]="form" (ngSubmit)="addReview()">
+        <div class="field-set">
+            <div class="comment">
+                <label for="comment">Leave your opinion!</label>
+                <input type="text" name="comment" id="comment" formControlName="comment">
+            </div>
+
+            <div class="rating">
+                <label for="rating">Stars</label>
+                <input type="number" name="rating" id="rating" formControlName="rating">
+            </div>
+
+            <button class="colored-btn">Create</button>
+        </div>
+    </form>
+</div>
