@@ -1,0 +1,60 @@
+.current-cake-background {
+  background-image: url("./../../../assets/background-cupcakes.png");
+  height: auto;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.current-cake {
+  display: flex;
+  padding-left: 400px;
+  margin: 0 0 5em 0;
+}
+
+.current-cake img {
+  width: 500px;
+  margin-right: 100px;
+}
+
+.info h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 75px;
+  font-weight: 600;
+  color: rgb(87, 87, 87);
+}
+
+.info h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 60px;
+  font-weight: 600;
+  color: rgb(226, 58, 58);
+}
+
+.info p {
+    text-indent: 1.5em;
+    font-size: 24px;
+}
+
+.colored-btn {
+  margin-left: 200px;
+  background-color: rgb(226, 58, 58);
+  padding: 0.5em 1.2em;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.colored-btn:hover {
+  background-color: rgb(158, 39, 39);
+  color: white;
+  transition: 0.3s ease-in-out;
+}

@@ -11,9 +11,10 @@ import { CakeModule } from './cake/cake.module';
 import { SharedModule } from './shared/shared.module';
 import { appInterceptorProvider } from './app.interceptor';
 import { AuthenticateComponent } from './authenticate/authenticate.component';
+import { ContactsComponent } from './contacts/contacts.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, AboutComponent, AuthenticateComponent],
+  declarations: [AppComponent, HomeComponent, AboutComponent, AuthenticateComponent, ContactsComponent],
   imports: [
     BrowserModule,
     CoreModule,

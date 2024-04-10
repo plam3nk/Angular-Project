@@ -1,1 +1,10 @@
-<p>current-cake works!</p>
+<div class="current-cake-background">
+    <a class="colored-btn" routerLink="/cakes">Back</a>
+    <div class="current-cake">
+        <img src="{{cake.url}}" alt="">
+        <div class="info">
+            <h1>{{cake.cakeName}}</h1>
+            <h2>Recipe:</h2>
+            <p>{{cake.description}}.</p>
+        </div>
+    </div>

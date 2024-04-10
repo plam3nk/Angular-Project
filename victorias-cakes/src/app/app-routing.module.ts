@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ErrorComponent } from './core/error/error.component';
 import { AboutComponent } from './about/about.component';
+import { ContactsComponent } from './contacts/contacts.component';
 
 const routes: Routes = [
   {
@@ -13,10 +14,17 @@ const routes: Routes = [
 
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
+  { path: 'contacts', component: ContactsComponent },
 
   {
     path: 'auth',
     loadChildren: () => import('./user/user.module').then((m) => m.UserModule),
+  },
+
+  {
+    path: 'reviews',
+    loadChildren: () =>
+      import('./reviews/reviews.module').then((m) => m.ReviewsModule),
   },
   // { path: '**', redirectTo: '404' },
   // { path: '404', component: ErrorComponent },

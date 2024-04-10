@@ -1,1 +1,27 @@
-<p>cakes-list works!</p>
+<div class="cakes-background">
+    <div class="cakes">
+        <h1>Wedding cakes</h1>
+        <div class="items-container">
+            <div *ngFor="let cake of weddingCakes" class="item">
+                <img src="{{cake.url}}" alt="">
+                <h2><a class="colored-btn" [routerLink]="cake._id">{{cake.cakeName}}</a></h2>
+            </div>
+        </div>
+
+        <h1>Birthday cakes</h1>
+        <div class="items-container">
+            <div *ngFor="let cake of birthdayCakes" class="item">
+                <img src="{{cake.url}}" alt="">
+                <h2><a class="colored-btn" [routerLink]="cake._id">{{cake.cakeName}}</a></h2>
+            </div>
+        </div>
+
+        <h1>Cupcakes</h1>
+        <div class="items-container">
+            <div *ngFor="let cake of cupCakes" class="item">
+                <img src="{{cake.url}}" alt="">
+                <h2><a class="colored-btn" [routerLink]="cake._id">{{cake.cakeName}}</a></h2>
+            </div>
+        </div>
+    </div>
+</div>

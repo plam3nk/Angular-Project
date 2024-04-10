@@ -1,0 +1,53 @@
+.contacts-background {
+  background-image: url("./../../assets/background-pink-cupcake.jpg");
+  height: 900px;
+  width: 1920px;
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: right;
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+  padding: 200px 400px 0 0;
+  gap: 50px;
+}
+
+.contacts {
+  background-color: white;
+  width: 450px;
+  height: 410px;
+  text-align: center;
+  border: 1px solid rgb(216, 214, 214);
+  box-shadow: rgb(218, 218, 218) 0 0 50px;
+}
+
+.contacts h1 {
+  padding: 100px 0 0 0;
+  font-size: 60px;
+  font-family: "Dancing Script", cursive;
+  font-weight: lighter;
+  color: rgb(87, 87, 87);
+}
+
+.contacts h2 {
+    color: rgb(226, 58, 58);
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.contacts p {
+    font-size: 20px;
+}
+
+.image {
+  background-color: white;
+  border: 1px solid rgb(216, 214, 214);
+  box-shadow: rgb(218, 218, 218) 0 0 50px;
+}
+
+.image img {
+  margin: 50px;
+  width: 400px;
+}
