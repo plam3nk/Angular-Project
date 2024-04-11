@@ -7,6 +7,7 @@ footer {
   align-items: center;
   background-color: #FEF7F0;
   gap: 2em;
+  margin: auto 0;
 }
 
 .title {
