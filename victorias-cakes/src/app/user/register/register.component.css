@@ -92,3 +92,8 @@ a:hover {
   color: white;
   transition: 0.3s ease-in-out;
 }
+
+.error {
+  color: rgb(226, 58, 58);
+  font-size: 17px;
+}

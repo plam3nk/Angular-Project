@@ -24,10 +24,29 @@
                     formControlName="username">
             </div>
 
+            <ng-container *ngIf="form.get('username')?.touched">
+                <p class="error" *ngIf="form.get('username')?.errors?.['required']">
+                    Username is required!
+                </p>
+
+                <p class="error" *ngIf="form.get('username')?.errors?.['minlength']">
+                    Username must be at least 5 characters!
+                </p>
+            </ng-container>
+
             <div class="item">
                 <h3>Email:</h3>
                 <input type="text" name="email" id="email" [value]="profileDetails.email" formControlName="email">
             </div>
+
+            <ng-container *ngIf="form.get('email')?.touched">
+                <p class="error" *ngIf="form.get('email')?.errors?.['required']">
+                    Email is required!
+                </p>
+                <p class="error" *ngIf="form.get('email')?.errors?.['emailValidator']">
+                    Email is not valid!
+                </p>
+            </ng-container>
 
             <div class="buttons">
                 <a class="colored-btn btn" (click)="onToggle()">Cancel</a>

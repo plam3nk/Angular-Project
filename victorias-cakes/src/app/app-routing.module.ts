@@ -21,8 +21,8 @@ const routes: Routes = [
     loadChildren: () => import('./user/user.module').then((m) => m.UserModule),
   },
 
-  // { path: '**', redirectTo: '404' },
-  // { path: '404', component: ErrorComponent },
+  { path: '**', redirectTo: '404' },
+  { path: '404', component: ErrorComponent },
 ];
 
 @NgModule({

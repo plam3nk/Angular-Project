@@ -7,10 +7,38 @@
                 <input type="text" name="comment" id="comment" formControlName="comment">
             </div>
 
+            <ng-container *ngIf="form.get('comment')?.touched">
+                <p class="error" *ngIf="form.get('comment')?.errors?.['required']">
+                    Text is required!
+                </p>
+
+                <p class="error" *ngIf="form.get('comment')?.errors?.['minlength']">
+                    Text must be at least 5 characters!
+                </p>
+
+                <p class="error" *ngIf="form.get('comment')?.errors?.['maxlength']">
+                    Text must not exceed 50 characters!
+                </p>
+            </ng-container>
+
             <div class="rating">
                 <label for="rating">Stars</label>
                 <input type="number" name="rating" id="rating" formControlName="rating">
             </div>
+
+            <ng-container *ngIf="form.get('rating')?.touched">
+                <p class="error" *ngIf="form.get('rating')?.errors?.['required']">
+                    Rating is required!
+                </p>
+
+                <p class="error" *ngIf="form.get('rating')?.errors?.['min']">
+                    Rating must be at least 1!
+                </p>
+
+                <p class="error" *ngIf="form.get('rating')?.errors?.['max']">
+                    Rating must not be over 5!
+                </p>
+            </ng-container>
 
             <button class="colored-btn">Create</button>
         </div>

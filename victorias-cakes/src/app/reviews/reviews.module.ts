@@ -7,6 +7,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [ReviewsListComponent, AddReviewComponent],
-  imports: [CommonModule, ReviewsRoutingModule, FormsModule, ReactiveFormsModule],
+  imports: [
+    CommonModule,
+    ReviewsRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+  ],
 })
 export class ReviewsModule {}

@@ -20,7 +20,6 @@ export class CakesListComponent implements OnInit {
     this.api.getCakes().subscribe((cakes) => {
       for (const cake of cakes) {
         if (cake.cakeType === 'wedding') {
-
           this.weddingCakes?.push(cake);
         } else if (cake.cakeType === 'birthday') {
           this.birthdayCakes?.push(cake);

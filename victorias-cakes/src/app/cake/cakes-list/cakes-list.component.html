@@ -1,7 +1,10 @@
 <div class="cakes-background">
     <div class="cakes">
         <h1>Wedding cakes</h1>
-        <div class="items-container">
+        <div *ngIf="isLoading">
+            <app-loader></app-loader>
+        </div>
+        <div *ngIf="!isLoading" class="items-container">
             <div *ngFor="let cake of weddingCakes" class="item">
                 <img src="{{cake.url}}" alt="">
                 <h2><a class="colored-btn" [routerLink]="cake._id">{{cake.cakeName}}</a></h2>

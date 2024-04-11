@@ -3,7 +3,9 @@
         <div *ngFor="let review of reviews" class="item">
             <h1>{{review.userId.username}}</h1>
             <p>{{review.comment}}</p>
-            <p>{{review.rating}}</p>
+            <div class="rating">
+                <span *ngFor="let _ of getStars(review.rating)">&#9733;</span>
+            </div>
         </div>
     </div>
 
