@@ -2,10 +2,10 @@
 Angular Web Project - website create with Angular Framework that gives us information about cakes recipes.
 
 Features
-User Authentication: Users can sign up, log in, and log out from their accounts.
-Cakes Catalog: Users can browse various types of cakes
-Cakes Details: User can browse recipes of all uploaded cakes
-Testimonials: Users can leave their reviews.
+ * User Authentication: Users can sign up, log in, and log out from their accounts.
+ * Cakes Catalog: Users can browse various types of cakes
+ * Cakes Details: User can browse recipes of all uploaded cakes
+ * Testimonials: Users can leave their reviews.
 
 # Home Page
 ![home-page](https://github.com/plam3nk/Angular-Project/assets/114010915/5bd7d4c0-3af9-40cf-8b29-04bdb5544228)
