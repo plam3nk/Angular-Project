@@ -38,6 +38,7 @@ a {
   color: rgb(36, 36, 36);
   font-size: 22px;
   transition: 0.15s ease-in-out;
+  cursor: pointer;
 }
 
 a:hover {
